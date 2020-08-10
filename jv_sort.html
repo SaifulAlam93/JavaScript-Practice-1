@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+<script>
+
+var a=[20,56,245,35,1,58,42,111,566];
+var x; var y; var z;
+for( var i=0; i<a.length ; i++ ){
+	for(var j=0; j<a.length;j++){
+		x= a[j];
+		y=a[j+1];
+		if(x>y){
+			z=x;
+			x=y;
+			y=z;
+			a[j]=x;
+			a[j+1]=y;
+			}
+			
+		}
+
+	
+	
+	}
+	document.write(a);
+/*if(a[0]>a[1]||a[1]>a[2]||a[2]>a[3]){
+	f=a[0];a[0]=a[1];a[1]=a[2];a[2]=a[3];a[3]=f
+	}}*/
+//document.write(a);
+
+
+
+</script>
+</body>
+</html>

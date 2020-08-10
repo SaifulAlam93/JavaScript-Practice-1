@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	
+	
+	<script>
+	
+	
+	
+	
+			 
+		
+	
+	/*var obj=new Object();
+	
+	obj.name="njnjnj";
+	
+	console.log(obj);
+		
+		
+		*/
+		
+	document.student.name.value="hello";
+	
+			
+			function getValues(){				
+				
+				console.log(document.student.name.value);
+				console.log(document.student.name1.value);
+				console.log(document.student.name2.value);
+				console.log(document.student.name3.value);
+				console.log(document.student.name4.value);		
+					
+			}
+		
+		
+			
+			
+			
+			
+	function getValues(){				
+	
+			with(document.student){	
+	
+			    console.log(name.value);
+				console.log(name1.value);
+				console.log(name2.value);
+				console.log(name3.value);
+				console.log(name4.value);
+		
+			}	}
+		
+
+	
+	
+	
+	</script>
+</head>
+
+<body>
+<a href="#" name="aa">sdfsdf</a>
+<form name="student">
+  <input type="text" name="name" value="hasan"/>
+  <br/>
+  <input type="text" name="name1" value="hasan"/>
+  <br/>
+  <input type="text" name="name2" value="hasan"/>
+  <br/>
+  <input type="text" name="name3" value="hasan"/>
+  <br/>
+  <input type="text" name="name4" value="hasan"/>
+  <br/>
+  <button onclick="getValues();return false;"> click</button>
+</form>
+	
+	
+	<div 
+	
+
+</body>
+</html>

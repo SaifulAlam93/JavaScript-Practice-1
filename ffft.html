@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+/*for(var a=o;a<7;a++){}*/
+/*
+var a=10;
+var b=20;
+var tamp=a;*/
+
+/*a=b;
+b=tamp;*/
+/*[a,b]=[b,a]
+
+document.write(b);
+document.write(a);
+*/
+
+
+
+/*
+max valu
+
+var a=[111,5,4,10,110];
+var m=0;
+for(i=0;i<a.length;i++){
+var ss=a[i];
+
+if(ss>m){m=ss;}};
+console.log(m);
+*/
+
+/*
+var a=[111,5,4,10,110];
+var m;
+for(i=0;i<a.length;i++){
+var ss=a[i];
+if(m===undefined){m=a}
+else
+if(ss>m){m=ss;}};
+console.log(m);
+*/
+
+  
+
+
+var m=0;
+function nbn(x){
+	m=(x);
+	document.getElementById("lll").value=m;}
+
+function mmm(){
+
+if(nbn%2==0){document.write("even")}else{document.write("else")}
+
+}
+
+
+var a=[20,45,36,89,54,66,75]
+//var odd=0;
+//var even=0;
+//
+//
+//var odda=[];
+//var evena=[];
+//
+//
+//
+//for(i=0;i<a.length;i++){
+//
+//if(a[i]%2==0){even++  ; odda.push(a[i]);}
+//else {odd++ ; evena.push(a[i]);}
+//}
+//document.write("total odd"+odd+"<br>");
+//document.write("total odd"+even+"<br>");
+//
+//
+//document.write(odda+"<br>")
+//document.write(evena)
+var total=0;
+for(i=0;i<a.length;i++){
+	
+
+document.write(a[i]+"<br>");
+total+=a[i];}
+
+document.write(total)
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+<input type="number" id="lll"><button type="button" onClick="mmm()">hhhh</button>
+</body>
+</html>

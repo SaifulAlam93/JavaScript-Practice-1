@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Javascript</title>
+<style>
+		table{
+			width:500px;
+			border:1px solid black;
+			border-collapse:collapse;
+			margin:auto;
+			background-color:#999;
+				
+			}
+		tr,td{
+			width:50px;
+			height:50px;
+			border: 1px solid black;
+			text-align:center;
+			color:#FFF;
+			font-weight:bolder;
+			padding:0;
+			
+			}
+			button{
+				height:100%;
+				width:100%;
+				margin:0;	
+				}
+</style>
+
+
+</head>
+
+<body>
+		<input type="number" id="fnum" /> <input type="text" id="opt" /> <input type="number" id="lnum" />
+        <input type="button" onClick="myf()" value="Result" /> <p id="demo"></p>
+
+        
+		<script>
+        	function myf(){
+				var a = document.getElementById('fnum').value;
+				var b = document.getElementById('opt').value;
+				var c =document.getElementById('lnum').value;
+				if(b==="+"){
+					document.getElementById('demo').innerHTML=parseInt(a)+ parseInt(c);
+					}
+				else if(b==="-"){
+					document.getElementById('demo').innerHTML=parseInt(a)- parseInt(c);
+					
+					}
+				else if(b==="*"){
+					document.getElementById('demo').innerHTML=parseInt(a)* parseInt(c);
+					}
+				else if(b==="/" ){
+					document.getElementById('demo').innerHTML=parseInt(a)/ parseInt(c);
+					}
+				}	
+        </script>
+</body>
+</html>

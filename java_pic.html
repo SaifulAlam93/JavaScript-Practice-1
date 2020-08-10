@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="div1">BAngladesh</div>
+<script>
+/*document.getElementById("div1").innerHTML="form outer div<div style='colo:red'>from inner div </div>";*/
+var parent=document.getElementById("div1");
+var child= document.createElement('div');
+child.innerHTML="hello";
+child.style.color='green';
+parent.appendChild(child);
+
+
+
+
+/*var child2=document.createElement('img')*/
+
+var child2= new Image();
+
+
+      child2.style.float="left";
+     child2.src="111.jpg";
+     child2.height="756";
+	 child2.width="756";
+     parent.appendChild(child2);
+
+
+</script>
+</body>
+</html>

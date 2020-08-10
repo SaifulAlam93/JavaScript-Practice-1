@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Untitled Document</title>
+	<script>
+		
+		var operator;
+		
+		
+		function setOperator(op){			
+			operator=op;			
+		}
+		
+	
+	function calculator(){
+		
+		
+		
+		console.log('1');
+		
+		var val1=document.getElementById("val1").value;
+		var val2=document.getElementById("val2").value;
+		
+		console.log('2');
+		
+//		val1=parseFloat(val1);
+//		val2=parseFloat(val2);
+		
+		
+			val1=parseInt(val1);
+		val2=parseInt(val2);
+		
+		
+		
+		console.log('3');
+
+		var result;
+		console.log(operator);
+		
+		if(operator === '+'){
+			console.log('4');
+		    result=val1+val2;
+			console.log('5');
+		}
+		else if(operator==='-'){
+			
+			result=val1-val2;
+		} 	    
+		else if(operator==='*'){
+			result=val1*val2;
+		} 
+		else if(operator==='/'){
+			result=val1/val2;
+		} 
+		else {
+			result="invalide sign";
+		}
+	
+		
+		document.getElementById("result").innerHTML=result;
+		
+		
+	}
+		
+		
+		
+		
+		
+		
+	
+	
+	</script>
+	</head>
+
+	<body>
+<input type="text" id="val1" style="margin: 20"/>
+		
+		<button  onClick="setOperator('+')"> +
+		</button>
+		<button  onClick="setOperator('-')"> -
+		</button>
+		<button  onClick="setOperator('*')"> *
+		</button>
+		<button  onClick="setOperator('/')"> /
+		</button>
+		
+<input type="text" id="val2" style="margin: 20"/>
+<button onClick="calculator();" >calculate </button>
+result : <span id="result"></span>
+</body>
+</html>
